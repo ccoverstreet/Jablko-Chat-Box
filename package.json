@@ -1,0 +1,19 @@
+{
+  "name": "jablko_chat_box",
+  "version": "0.1.0",
+  "description": "Jablko Chat Box",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccoverstreet/Jablko-Chat-Box.git"
+  },
+  "author": "Cale Overstreet",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/ccoverstreet/Jablko-Chat-Box/issues"
+  },
+  "homepage": "https://github.com/ccoverstreet/Jablko-Chat-Box#readme"
+}
