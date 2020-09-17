@@ -1,6 +1,6 @@
 {
   "name": "jablko_chat_box",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Jablko Chat Box",
   "main": "index.js",
   "scripts": {
