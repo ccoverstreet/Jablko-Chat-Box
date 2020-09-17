@@ -4,6 +4,9 @@
 			const message_element = document.getElementById("$MODULE_NAME_message");
 			const response_element = document.getElementById("$MODULE_NAME_response");
 
+			response_element.textContent = "Loading...";
+			response_element.style.color = "var(--color-green)";
+
 
 			fetch("/jablko_modules/$MODULE_NAME/web_ask_jablko", {
 				method: "POST",
@@ -15,10 +18,13 @@
 			})
 				.then(async (data) => {
 					const response = await data.json();
-					document.getElementById("$MODULE_NAME_response").innerText = response.response;
+					response_element.style.color = "var(--font-color)";
+					response_element.innerText = response.response;
 					console.log(response);
 				})
 				.catch((error) => {
+					response_element.style.color = "var(--color-red)";
+					response_element.textContent = "Error communicating";
 					console.log(error);
 				});
 			
